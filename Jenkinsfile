@@ -16,9 +16,9 @@ pipeline {
         stage('Upload'){
             steps{
                     rtUpload (
-                            serverId: "artifactory",
-                             spec: '''{
-                                "files": [
+                            serverId: "artifactory1234",
+                            spec: '''{
+                            "files": [
                                  {
                                     "pattern": "C:/Windows/System32/config/systemprofile/AppData/Local/Jenkins/.jenkins/workspace/JenkinsDemo/Output.zip",
                                     "target": "demo2/"
