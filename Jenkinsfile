@@ -19,7 +19,7 @@ pipeline {
                     //buildName: 'holyFrog',
                     //buildNumber: '42',
                     // Obtain an Artifactory server instance, defined in Jenkins --> Manage Jenkins --> Configure System:
-                    serverId: SERVER_ID,
+                    serverId: "artifactory1234",
                     specPath: 'https://github.com/ShreyaAdkar/JenkinsDemo/blob/main/upload.json'
                 )
             }
