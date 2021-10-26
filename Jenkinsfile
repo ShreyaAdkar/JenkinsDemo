@@ -9,7 +9,7 @@ pipeline {
                 //sh 'mkdir -p archive'
                 //sh 'echo Output > archive/Output.txt'
                 script{
-                    zip archive : true, dir : '', glob : '', zipFile : 'Output2.zip'
+                    zip archive : true, dir : '', glob : '', zipFile : 'Output3.zip'
                 } 
             }
         }
@@ -20,7 +20,7 @@ rtUpload (
     spec: '''{
           "files": [
             {
-              "pattern": "C:/Windows/System32/config/systemprofile/AppData/Local/Jenkins/.jenkins/workspace/JenkinsDemo/*Output2*.zip",
+              "pattern": "C:/Windows/System32/config/systemprofile/AppData/Local/Jenkins/.jenkins/workspace/JenkinsDemo/*Output3*.zip",
               "target": "demo2/"
             }
          ]
