@@ -6,7 +6,7 @@ pipeline {
                 echo "Deploy"
                 //sh 'mkdir archive'
                 //sh 'echo test > archive/test.txt'
-                zipFile : 'Output.zip'  ,dir :''
+                zipFile : 'Output'  ,dir :''
                 //archiveArtifacts artifacts: 'test.zip', fingerprint: true
             }
         }
