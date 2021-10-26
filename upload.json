@@ -1,14 +1,9 @@
 {
   "files": [
     {
-      "pattern": "jenkins-examples/pipeline-examples/resources/*Artifactory*.zip",
-      "target": "libs-snapshot-local/",
+      "pattern": "C:\Windows\System32\config\systemprofile\AppData\Local\Jenkins\.jenkins\workspace\JenkinsDemo\Output.zip",
+      "target": "demo2/",
       "recursive": "false"
     },
-    {
-      "pattern": "jenkins-examples/pipeline-examples/resources/*ArtifactoryPipelineNoFlat.zip",
-      "target": "libs-snapshot-local",
-      "flat" :"false"
-    }
   ]
 }
