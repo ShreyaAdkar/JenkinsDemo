@@ -16,7 +16,7 @@ pipeline {
     }
 }
 rtUpload (
-   serverId: "SERVER_ID",
+   instanceId: "artifactory",
     spec: '''{
           "files": [
             {
