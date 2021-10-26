@@ -1,15 +1,13 @@
-node(Jenkinks_1)
-{
-    echo "ZIP"
-    zip zipFile: 'Output.zip', dir:'https://github.com/ShreyaAdkar/JenkinsDemo/tree/main/Output'
-    echo "END - ZIP"
-}
-
-
-//pipeline { 
-    //agent any 
-       // stages{ 
-           // stage ('push artifact'){ 
-                //steps { sh 'mkdir archive' sh  
-                       // { [Pipeline] echo ZIP [Pipeline] 
-                        // echo END - ZIP [Pipeline] }
+pipeline {
+    agent any
+    stages {
+        stage ('Deploy') {
+            steps {
+                sh 'mkdir archive'
+                sh 'echo test > archive/test.txt'
+                zip zipFile: 'Output.zip', archive: false, dir: 'archive'
+                archiveArtifacts artifacts: 'test.zip', fingerprint: true
+            }
+        }
+        
+    }
