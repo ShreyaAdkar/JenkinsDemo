@@ -17,7 +17,7 @@ pipeline {
 }
 rtServer (
     id: 'demo1',
-    url: 'http://localhost:8082/ui/admin/repositories/local/demo1',
+    url: 'http://localhost:8082//artufactory//demo1',
     // If you're using username and password:
     username: 'admin',
     password: 'password@123',
@@ -30,14 +30,14 @@ rtServer (
     timeout: 300
 )
 rtUpload (
-    serverId: 'Artifactory-1',
-    specPath: 'path/to/spec/relative/to/workspace/spec.json',
+    serverId: 'demo1',
+    specPath: 'http://localhost:8082/artifactory/demo1'
  
     // Optional - Associate the uploaded files with the following custom build name and build number.
     // If not set, the files will be associated with the default build name and build number (i.e the
     // the Jenkins job name and number).
-    buildName: 'JenkinsDemo',
-    buildNumber: '37',
+    //buildName: 'JenkinsDemo',
+    //buildNumber: '37',
     // Optional - Only if this build is associated with a project in Artifactory, set the project key as follows.
     //project: 'my-project-key'
 )
