@@ -9,19 +9,19 @@ pipeline {
                 //sh 'mkdir -p archive'
                 //sh 'echo Output > archive/Output.txt'
                 script{
-                    zip archive : true, dir : 'https://github.com/ShreyaAdkar/JenkinsDemo/', glob : '', zipFile : 'Output.zip'
+                    zip archive : true, dir : '', glob : '', zipFile : 'Output.zip'
                 } 
             }
         }
         stage ('Upload') {
             steps {
                 rtUpload (
-                    //buildName: 'holyFrog',
-                    //buildNumber: '42',
-                    // Obtain an Artifactory server instance, defined in Jenkins --> Manage Jenkins --> Configure System:
-                    serverId: "artifactory1234",
-                   specPath: 'C:/Windows/System32/config/systemprofile/AppData/Local/Jenkins/.jenkins/workspace/JenkinsDemo/upload.json'
+                
+                   serverId: "artifactory1234",
+                  // specPath: 'C:/Windows/System32/config/systemprofile/AppData/Local/Jenkins/.jenkins/workspace/JenkinsDemo/Output.zip'
                     //specPath: 'https://github.com/ShreyaAdkar/JenkinsDemo/blob/main/upload.json'
+                    "pattern": "https://github.com/ShreyaAdkar/JenkinsDemo/Output.zip",
+                    "target": "demo2/"
                 )
             }
         }
