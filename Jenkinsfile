@@ -9,18 +9,18 @@ pipeline {
                 //sh 'mkdir -p archive'
                 //sh 'echo Output > archive/Output.txt'
                 script{
-                    zip archive : true, dir : '', glob : '', zipFile : 'Output3.zip'
+                    zip archive : true, dir : '', glob : '', zipFile : 'Output.zip'
                 } 
             }
         }
     }
 }
 rtUpload (
-    serverId: 'SERVER_ID',
+    serverId: 'artifactory',
     spec: '''{
           "files": [
             {
-              "pattern": "C:/Windows/System32/config/systemprofile/AppData/Local/Jenkins/.jenkins/workspace/JenkinsDemo/*Output3*.zip",
+              "pattern": "C:/Windows/System32/config/systemprofile/AppData/Local/Jenkins/.jenkins/workspace/JenkinsDemo/*Output*.zip",
               "target": "demo2/"
             }
          ]
