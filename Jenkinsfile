@@ -20,7 +20,7 @@ rtUpload (
     spec: '''{
           "files": [
             {
-              "pattern": "C:\Windows\System32\config\systemprofile\AppData\Local\Jenkins\.jenkins\workspace\JenkinsDemo/*Output*.zip",
+              "pattern": "C:/Windows/System32/config/systemprofile/AppData/Local/Jenkins/.jenkins/workspace/JenkinsDemo/*Output2*.zip",
               "target": "demo2/"
             }
          ]
