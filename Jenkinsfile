@@ -20,9 +20,10 @@ pipeline {
                     //buildNumber: '42',
                     // Obtain an Artifactory server instance, defined in Jenkins --> Manage Jenkins --> Configure System:
                     serverId: "artifactory1234",
-                    specPath: 'C:/Windows/System32/config/systemprofile/AppData/Local/Jenkins/.jenkins/workspace/JenkinsDemo/upload.json'
+                   // specPath: 'C:/Windows/System32/config/systemprofile/AppData/Local/Jenkins/.jenkins/workspace/JenkinsDemo/upload.json'
+                    specPath: 'https://github.com/ShreyaAdkar/JenkinsDemo/blob/main/upload.json'
                 )
             }
         }
-        }
-    }
+     }
+ }
