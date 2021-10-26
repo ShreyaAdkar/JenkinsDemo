@@ -21,7 +21,7 @@ pipeline {
                     spec: '''{
                         "files": [
                             {
-                             "pattern": "https://github.com/ShreyaAdkar/JenkinsDemo/Output.zip",
+                             "pattern": "C:/Windows/System32/config/systemprofile/AppData/Local/Jenkins/.jenkins/workspace/JenkinsDemo/Output.zip",
                              "target": "demo2/"
                             }
                         ]
