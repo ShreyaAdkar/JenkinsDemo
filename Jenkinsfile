@@ -22,6 +22,7 @@ rtUpload (
             {
               "pattern": "C:/Windows/System32/config/systemprofile/AppData/Local/Jenkins/.jenkins/workspace/JenkinsDemo/Output_*",
               "target": "demo2/"
+              "recursive" : "false"
             }
          ]
     }'''
