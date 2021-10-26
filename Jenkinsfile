@@ -13,19 +13,16 @@ pipeline {
                 } 
             }
         }
-        stage('Upload'){
-            steps{
-                    rtUpload (
-                            serverId: "artifactory1234",
-                            spec: '''{
-                            "files": [
-                                 {
-                                    "pattern": "C:/Windows/System32/config/systemprofile/AppData/Local/Jenkins/.jenkins/workspace/JenkinsDemo/Output.zip",
-                                    "target": "demo2/"
-                                 }
-                                ]
-                            }'''
-                    )
+        stage ('Upload') {
+            steps {
+                rtUpload (
+                    //buildName: 'holyFrog',
+                    //buildNumber: '42',
+                    // Obtain an Artifactory server instance, defined in Jenkins --> Manage Jenkins --> Configure System:
+                    serverId: SERVER_ID,
+                    specPath: 'https://github.com/ShreyaAdkar/JenkinsDemo/blob/main/upload.json'
+                )
             }
+        }
         }
     }
