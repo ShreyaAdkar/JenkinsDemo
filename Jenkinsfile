@@ -1,14 +1,11 @@
-pipeline {
-    agent any
-
-    stages {
-        stage('Deploy') {
-            steps {
-               Zip zipFile: 'Output.Zip', dir:'https://github.com/ShreyaAdkar/JenkinsDemo/tree/main/Output'
-            }
-        }
-    }
+node(Jenkinks_1)
+{
+    echo "ZIP"
+    zip zipFile: 'Output.zip', dir:'https://github.com/ShreyaAdkar/JenkinsDemo/tree/main/Output'
+    echo "END - ZIP"
 }
+
+
 //pipeline { 
     //agent any 
        // stages{ 
