@@ -1,9 +1,0 @@
-{
-  "files": [
-    {
-      "pattern": "https://github.com/ShreyaAdkar/JenkinsDemo/Output.zip",
-      "target": "demo2/",
-      "recursive": "false"
-    },
-  ]
-}
