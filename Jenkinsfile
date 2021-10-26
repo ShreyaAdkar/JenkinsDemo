@@ -9,7 +9,7 @@ pipeline {
                 //sh 'mkdir -p archive'
                 //sh 'echo Output > archive/Output.txt'
                 script{
-                    zip archive : true, dir : '', glob : '', zipFile : 'Output1.zip'
+                    zip archive : true, dir : '', glob : '', zipFile : 'Output2.zip'
                 } 
             }
         }
