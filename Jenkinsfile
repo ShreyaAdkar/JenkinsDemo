@@ -6,7 +6,7 @@ pipeline {
                 echo "Deploy"
                 //sh 'mkdir archive'
                 //sh 'echo test > archive/test.txt'
-                zip label : 'Output.zip'  ,url :'https://github.com/ShreyaAdkar/JenkinsDemo/tree/main/Output'
+                zipFile : 'Output.zip'  ,dir :''
                 //archiveArtifacts artifacts: 'test.zip', fingerprint: true
             }
         }
