@@ -16,7 +16,7 @@ pipeline {
     }
 }
 rtUpload (
-   serverId: "demo2",
+   serverId: SERVER_ID,
     spec: '''{
           "files": [
             {
