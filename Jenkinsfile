@@ -19,8 +19,8 @@ pipeline {
             steps {
                 sh 'mkdir archive'
                 sh 'echo test > archive/test.txt'
-                zip zipFile : 'Output.zip', archive: false, dir: ''
-                archiveArtifacts artifacts: 'test.zip', fingerprint: true
+                zip zipFile : 'Output.zip', archive : false, dir : ''
+                archiveArtifacts artifacts : 'test.zip', fingerprint : true
             }
         }
     }
