@@ -20,8 +20,16 @@ pipeline {
                    serverId: "artifactory1234",
                   // specPath: 'C:/Windows/System32/config/systemprofile/AppData/Local/Jenkins/.jenkins/workspace/JenkinsDemo/Output.zip'
                     //specPath: 'https://github.com/ShreyaAdkar/JenkinsDemo/blob/main/upload.json'
-                    "pattern": "https://github.com/ShreyaAdkar/JenkinsDemo/Output.zip",
-                    "target": "demo2/"
+                   // "pattern": "https://github.com/ShreyaAdkar/JenkinsDemo/Output.zip",
+                  //  "target": "demo2/"
+                    spec: '''{
+                        "files": [
+                            {
+                             "pattern": "https://github.com/ShreyaAdkar/JenkinsDemo/Output.zip",
+                             "target": "demo2/"
+                            }
+                        ]
+                    }''',
                 )
             }
         }
