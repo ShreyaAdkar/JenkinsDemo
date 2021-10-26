@@ -9,5 +9,5 @@ pipeline {
                 archiveArtifacts artifacts: 'test.zip', fingerprint: true
             }
         }
-        
+    }    
     }
