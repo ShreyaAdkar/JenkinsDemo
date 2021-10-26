@@ -9,7 +9,7 @@ pipeline {
                 //sh 'mkdir -p archive'
                 //sh 'echo Output > archive/Output.txt'
                 script{
-                    zip archive : false, dir : '', glob : '', zipFile : 'Output.zip'
+                    zip archive : true, dir : 'https://github.com/ShreyaAdkar/JenkinsDemo/', glob : '', zipFile : 'Output.zip'
                 } 
             }
         }
