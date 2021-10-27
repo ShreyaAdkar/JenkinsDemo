@@ -21,13 +21,14 @@ pipeline {
                     spec: '''{
                         "files": [
                             {
-                             "pattern": "C:/Windows/System32/config/systemprofile/AppData/Local/Jenkins/.jenkins/workspace/JenkinsDemo/Output.zip",
+                             "pattern": "*.zip",
                              "target": "demo2/"
                             }
                         ]
                     }'''
-                )
+                )//"pattern": "C:/Windows/System32/config/systemprofile/AppData/Local/Jenkins/.jenkins/workspace/JenkinsDemo/Output.zip",
             }
         }
+        
      }
  }
