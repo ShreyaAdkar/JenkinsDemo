@@ -29,6 +29,21 @@ pipeline {
                 )//"pattern": "C:/Windows/System32/config/systemprofile/AppData/Local/Jenkins/.jenkins/workspace/JenkinsDemo/Output.zip",
             }
         }
-        
+        stage ('DownloadUpload') {
+            steps {
+                rtUpload (
+                
+                   serverId: "artifactory1234",
+                    spec: '''{
+                        "files": [
+                            {
+                             "pattern": "*.zip",
+                             "target": "demo2/"
+                            }
+                        ]
+                    }'''
+                )
+            }
+        }
      }
  }
