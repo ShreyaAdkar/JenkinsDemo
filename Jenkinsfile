@@ -38,7 +38,7 @@ pipeline {
                         "files": [
                             {
                              "pattern": "http://localhost:8082/artifactory/demo2/*.zip",
-                             "target": "D:\Workspace"
+                             "target": "D:/Workspace/"
                             }
                         ]
                     }'''
