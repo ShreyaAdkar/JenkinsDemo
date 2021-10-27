@@ -31,8 +31,7 @@ pipeline {
         }
         stage ('DownloadUpload') {
             steps {
-                rtUpload (
-                
+                rtDownload
                    serverId: "artifactory1234",
                     spec: '''{
                         "files": [
