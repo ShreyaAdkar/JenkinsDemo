@@ -37,8 +37,8 @@ pipeline {
                     spec: '''{
                         "files": [
                             {
-                             "pattern": "demo2/*.zip",
-                             "target": "https://github.com/ShreyaAdkar/JenkinsDemo"
+                             "pattern": "http://localhost:8082/artifactory/demo2/*.zip",
+                             "target": "D:\Workspace"
                             }
                         ]
                     }'''
